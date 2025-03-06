@@ -66,4 +66,27 @@
   margin-top: 10px;
 }
 
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .converter-container {
+    padding: 30px;
+    width: 95%; /* Adjust for small screens */
+    margin: 30px auto;
+  }
+
+  .converter-input,
+  .converter-select {
+    font-size: 16px; /* Slightly smaller text for better fit */
+    padding: 10px;
+  }
+
+  .converter-button {
+    font-size: 14px; /* Slightly smaller button */
+    padding: 10px;
+  }
+
+  .note-text {
+    font-size: 12px; /* Smaller note text */
+  }
+}
 
