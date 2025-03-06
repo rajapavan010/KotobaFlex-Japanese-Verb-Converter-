@@ -1,0 +1,170 @@
+/* Reset Default Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Page Container */
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar */
+.home-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #6ba8b7, #6c94c4);
+  padding: 10px 20px;
+  height: 80px;
+}
+
+/* Home Button */
+.home-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.home-button:hover .home-icon {
+  transform: scale(1.1);
+}
+
+/* Title */
+.home-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Navbar Description */
+.home-description {
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Logo */
+.home-right {
+  display: flex;
+  align-items: center;
+}
+
+.home-logo {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+.home-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Main Content - Ensure Full Utilization */
+.home-main {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  max-width: 100%;
+}
+
+/* Level Boxes Container */
+.home-box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  max-width: 90vw; /* Utilizes more space */
+}
+
+/* Box Styling */
+.home-box {
+  width: 240px;
+  height: 260px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* Full-Width and Full-Height Images */
+.home-box-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Text Overlay */
+.home-box-text {
+  position: absolute;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Hover Effect */
+.home-box:hover {
+  transform: scale(1.05);
+}
+
+.home-box:hover .home-box-img {
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* Footer - Pushes to the bottom */
+.home-footer {
+  width: 100%;
+  background: linear-gradient(to right, #4a90e2, #225fa1);
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .home-description {
+    display: none;
+  }
+}
